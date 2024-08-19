@@ -18,6 +18,7 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -46,6 +47,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -125,43 +127,43 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Node.js',
+    'MySQL',
+    'Next.js',
+    'Java',
+    'SQL',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About Me</h2>
+      <h2 className="numbered-heading">Sobre mim</h2>
 
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Sou um desenvolvedor brasileiro apaixonado por criar soluções inovadoras utilizando
+              tecnologia. Com mais de 4 anos de experiência em React, Node.js e MySQL, venho
+              desenvolvendo aplicações web interativas de alta qualidade.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Minha trajetória inclui atuação em empresas renomadas como a Huoli Soluções Criativas,
+              onde gerenciei projetos importantes, e o Governo do Distrito Federal, em parceria com
+              a Universidade de Brasília, onde desenvolvi um aplicativo de alfabetização.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Atualmente, estou focado em entregar soluções eficientes e interfaces intuitivas em
+              projetos com grandes clientes brasileiros na Rybena, utilizando Java, React, Vue,
+              TypeScript e Next.js.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Aqui estão algumas das tecnologias com as quais tenho trabalhado recentemente:</p>
           </div>
 
           <ul className="skills-list">
@@ -177,7 +179,7 @@ const About = () => {
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Foto de perfil"
             />
           </div>
         </StyledPic>

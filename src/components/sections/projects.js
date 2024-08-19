@@ -265,11 +265,9 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Minhas formacoes </h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
+      <Link className="inline-link archive-link">ate o momento</Link>
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (

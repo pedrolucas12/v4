@@ -59,19 +59,18 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Olá, meu nome é</h1>;
+  const two = <h2 className="big-heading">Pedro Lucas</h2>;
+  const three = <h3 className="big-heading">Eu construo soluções web</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
+        Sou um engenheiro de software especializado em construir (e ocasionalmente projetar)
+        experiências digitais excepcionais. Atualmente, estou focado em desenvolver produtos
+        acessíveis e centrados no ser humano, utilizando principalmente{' '}
         <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+          JavaScript
         </a>
-        .
       </p>
     </>
   );
@@ -81,7 +80,7 @@ const Hero = () => {
       href="https://www.newline.co/courses/build-a-spotify-connected-app"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Olhe meu currículo
     </a>
   );
 
